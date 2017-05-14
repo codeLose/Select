@@ -1,0 +1,76 @@
+
+html, body, #root {
+  height: 100%;
+}
+.dis {
+  display:none;
+}
+/*容器*/
+.container {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}
+/*piece盒子*/
+.piece-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 300px auto;
+    perspective-origin: 50% 50%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg)
+}
+/*piece通用样式*/
+.piece {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: red;
+    border: 19x solid #ddd;
+
+}
+
+.piece-1 {
+    background: #FF6666;
+    transform: rotateY(0deg) translateZ(10px);
+
+}
+.piece-2 {
+    background: #FFFF00;
+    transform: rotateY(90deg) translateZ(190px);
+    width: 20px
+}
+
+.piece-3 {
+    background: #009999;
+    transform: rotateY(180deg) translateZ(10px);
+}
+.piece-4 {
+    background: #006699;
+    transform: rotateY(270deg) translateZ(10px);
+    width: 20px
+}
+.ab {
+  position: relative;
+}
+.li {
+  height: 45px;
+}
+.ab::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1999;
+}
+.myInput {
+  position: absolute;;
+  z-index: 2500;
+}
