@@ -91,3 +91,16 @@ html, body, #root {
   overflow: hidden;
   font-size: 12px;
 }
+
+.ant-select-dropdown-menu-item-selected {
+
+}
+
+.ant-select-selection__choice__remove:before {
+  content: "\E633";
+  display: block;
+  font-family: "anticon" !important;
+}
+.visible {
+  display: block;
+}
